@@ -1,24 +1,24 @@
 spring:
   datasource:
-    url: jdbc:mysql://db:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://liantong.imwork.net:13306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
-    password: root
+    password: mysql804703017
   data:
     mongodb:
       host: mongo
       port: 27017
       database: mall-port
   redis:
-    host: redis # Redis服务器地址
+    host: liantong.imwork.net # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
-    port: 6379 # Redis服务器连接端口
-    password: #不设置密码
+    port: 16379 # Redis服务器连接端口
+    password: redis804703017
   rabbitmq:
-    host: rabbit
-    port: 5672
+    host: liantong.imwork.net
+    port: 15672
     virtual-host: /mall
-    username: mall
-    password: mall
+    username: root
+    password: rabbitmq804703017
     publisher-confirms: true #如果对异步消息需要回调必须设置为true
 logging:
   file:
